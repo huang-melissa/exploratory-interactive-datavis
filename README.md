@@ -7,4 +7,4 @@ This project will be a series of exploratory data visualizations on Valentine's 
 
 ### Initial sketches -
 
-![alt text](https://github.com/huang-melissa/exploratory-interactive-datavis/tree/main/initialsketch.png?raw=true)
+![alt text](https://github.com/huang-melissa/exploratory-interactive-datavis/blob/main/initialsketch.png?raw=true)
