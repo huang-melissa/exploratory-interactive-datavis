@@ -9,6 +9,10 @@ The three directions I intend to take with visualizing Valentine's Day spending 
 
 ![alt text](https://github.com/huang-melissa/exploratory-interactive-datavis/blob/main/sketch2.png?raw=true)
 
+### Mockup - 
+
+Mockup for code of the area chart is on main.js 
+
 ## PHASE I: IDEATION
 ### Prospectus - 
 
