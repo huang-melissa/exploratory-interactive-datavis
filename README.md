@@ -1,5 +1,14 @@
 # exploratory-interactive-datavis
 
+## PHASE II: BRAINSTORMING + SKETCHES 
+### Brainstorming - 
+
+The three directions I intend to take with visualizing Valentine's Day spending trends are the following: 1) How much money is being spent, 2) Who are the gifts for, and 3) What gifts are being purchased? Because I have a mix of nominal and continuous data, I am choosing to utilize a bar charts, tree map, and area chart (to represent time trends). I intend on having 3 separate graphs all of which will have either an interaction (e.g., dropdown) or transition.
+
+### Updated design sketches -
+
+![alt text](https://github.com/huang-melissa/exploratory-interactive-datavis/blob/main/sketch2.png?raw=true)
+
 ## PHASE I: IDEATION
 ### Prospectus - 
 

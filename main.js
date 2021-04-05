@@ -19,7 +19,7 @@ let yAxisGroup;
 /* APPLICATION STATE */
 let state = {
   data: [],
-  selectedType: "Country", // + YOUR FILTER SELECTION
+  selectedType: "Spending Type", // + YOUR FILTER SELECTION
 };
 
 
@@ -111,7 +111,7 @@ function init() {
     .attr("letter-spacing", "0.2em")
     .attr("font-size","12")
     .attr("style","fill:#4f5d68")
-    .text("Socioeconomic Status Score")
+    .text("Spending in billions")
 
   draw(); // calls the draw function
 }
@@ -154,7 +154,7 @@ function draw() {
       .join("text")
       .attr("text-anchor", "start")
       .attr('opacity', '0')
-      .text(d => `${formatDate(d.Year)}'s Dollars (millions): ${d3.format(",")(d.Value)} `)
+      .text(d => `${formatDate(d.Year)}'s Dollars (billions): ${d3.format(",")(d.Value)} `)
       .on('mouseover', function (d, i) {
         d3.select(this).transition()
             .duration('100')
