@@ -30,7 +30,7 @@ d3.csv('../data/total_average_spending_years-nrf.csv', d3.autoType, (d) => {
   const Object = {
     Type: d.Type,
     Value: +d.Value,
-    Year: new Date(+d.Year)
+    Year: new Date(+d.Year, 1, 1)
   }
   return Object
 })
@@ -51,7 +51,7 @@ function init() {
     .domain(d3.extent(state.data, d => d.Year))
     .range([margin.left, width - margin.right])
   yScale = d3.scaleLinear()
-    .domain(d3.extent(state.data, d =>d.Value))
+    .domain([0, d3.max(state.data, d =>d.Value)])
     .range([height - margin.bottom, margin.top])
   // + AXES
   const xAxis = d3.axisBottom(xScale)
