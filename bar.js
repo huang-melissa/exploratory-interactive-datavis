@@ -4,8 +4,8 @@ d3.csv("../data/percent_2010-nrf.csv", d3.autoType).then(data => {
 
     /** CONSTANTS */
     // constants help us reference the same values throughout our code
-    const width = window.innerWidth * .8,
-      height = window.innerHeight / 1.5,
+    const width = window.innerWidth * .75,
+      height = window.innerHeight / 2,
       paddingInner = 0.2,
       margin = { top: 20, bottom: 40, left: 100, right: 100 }
 
@@ -55,7 +55,7 @@ const color = d3.scaleSequential()
       // this allows us to position the text in the center of the bar
       .attr("y", d => yScale(d.Individual) + (yScale.bandwidth()+5))
       .attr("x", 0, d => xScale(d.Percent))
-      .text((d => d.Percent), "%")
+      .text(d => `${d.Percent}%`)
       .attr("dx", "205")
       .attr("fill", "#FFFFFF");
  
