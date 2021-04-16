@@ -125,6 +125,27 @@ h3 {
     border: 3px solid red;
 }
 
+#treeintro{
+    position: absolute;
+    top: 1200px; 
+    left: 700px;
+    font-family: "Raleway", serif;
+    font-weight: bold; 
+    letter-spacing: 2px;
+    color: #7c243d;
+    font-size: 20px;
+    border: 3px solid purple;
+  }
+
+#tree-container{
+    position: absolute;
+    top: 1250px;
+    left: 40px;
+    font-size: 10px;
+    font-family: "Raleway", serif;
+    letter-spacing: 1.25px;
+    border: 3px solid orange;
+}
   svg{
       font-family: "Raleway", "Montesserat", serif;
   }
