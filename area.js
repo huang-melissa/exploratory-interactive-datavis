@@ -26,7 +26,7 @@ let state = {
 /* LOAD DATA */
 // + SET YOUR DATA PATH
 
-d3.csv('../data/total_average_spending_years-nrf.csv', d3.autoType, (d) => {
+d3.csv('../data/gift_percent.csv', d3.autoType, (d) => {
   const Object = {
     Type: d.Type,
     Value: +d.Value,
@@ -57,7 +57,7 @@ function init() {
   const xAxis = d3.axisBottom(xScale)
   const yAxis = d3.axisLeft(yScale)
   // + UI ELEMENT SETUP
-  const dropdown = d3.select('#dropdown')
+  const dropdown = d3.select('#dropdown2')
 
   // add in dropdown options from the unique values in the data
   dropdown.selectAll("option")
@@ -111,7 +111,7 @@ function init() {
     .attr("letter-spacing", "0.2em")
     .attr("font-size","12")
     .attr("style","fill:#702b43")
-    .text("Spending (in billions)")
+    .text("Percent")
 
   draw(); // calls the draw function
 }
@@ -154,7 +154,7 @@ function draw() {
       .join("text")
       .attr("text-anchor", "start")
       .attr('opacity', '0')
-      .text(d => `${formatDate(d.Year)}'s Spending: $${d3.format(",")(d.Value)} billion `)
+      .text(d => `${formatDate(d.Year)}: ${d3.format(",")(d.Value)}%`)
       .on('mouseover', function (d, i) {
         d3.select(this).transition()
             .duration('100')

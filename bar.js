@@ -1,3 +1,4 @@
+
 d3.csv("../data/percent_2010-nrf.csv", d3.autoType).then(data => {
     console.log(data);
   

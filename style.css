@@ -37,11 +37,11 @@
   }
 
   h2 {
-    color: #FC5A8D;
+    color: #441726;
     text-align: Center;
-    font-weight: bold; 
-    font-size: 20px;
-    letter-spacing: 3px;
+    font-weight: normal; 
+    font-size: 12px;
+    letter-spacing: 1px; 
     font-family: "Raleway", serif;
 }
 
@@ -91,6 +91,16 @@ h3 {
     font-family: "Raleway", serif;
     letter-spacing: 1.5px;
     border: 3px solid green;
+}
+
+#bardrop{
+  position: absolute;
+  top: 300px;
+  left: 40px;
+  font-size: 10px;
+  font-family: "Raleway", serif;
+  letter-spacing: 1.5px;
+  border: 3px solid brown;
 }
 
 #area-container{
