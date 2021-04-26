@@ -19,7 +19,8 @@
   }
   
   body {
-    background-color: #e8b5c1; /*light pink */
+    background: rgb(186,108,142);
+background: linear-gradient(180deg, rgba(186,108,142,1) 0%, rgba(242,196,217,1) 100%) fixed;
     font-size: 14px;
     font-weight: normal;
     font-family: "Raleway", "Helvetica", sans-serif; 
@@ -28,7 +29,7 @@
  
   
   h1 {
-      color: #ad6a7a;
+      color: #c33f78;
       text-align: Center;
       font-size: 50px;
       font-weight: bold; 
@@ -46,12 +47,37 @@
 }
 
 h3 {
-    color: #CD5E77;
+    color: #ddcbd3;
     text-align: Center;
     font-weight: bold; 
     font-size: 20px;
     letter-spacing: 3px;
     font-family: "Raleway", serif;
+  
+}
+
+h4 {
+  color: maroon;
+  text-align: Center;
+  font-weight: bold; 
+  font-size: 60px;
+  position: absolute;
+  top: 200px;
+  left: 280px;
+  letter-spacing: 1px; 
+  font-family: "Raleway", serif;
+}
+
+h5 {
+  color: lavender;
+  text-align: Center;
+  font-weight: bold; 
+  font-size: 60px;
+  position: absolute;
+  top: 180px;
+  left: 610px;
+  letter-spacing: 1px; 
+  font-family: "Raleway", serif;
 }
   div {
   
@@ -71,36 +97,49 @@ h3 {
     row-gap: 1em;
   }  */
 
+  #numintro{
+    position: absolute;
+    top: 260px; 
+    left: 110px;
+    font-family: "Raleway", serif;
+    font-weight: bold; 
+    letter-spacing: 2px;
+    color: #7c243d;
+    font-size: 20px;
+    border: 0px solid blue;
+  }
+
+
   #barintro{
     position: absolute;
-    top: 250px; 
+    top: 350px; 
     left: 40px;
     font-family: "Raleway", serif;
     font-weight: bold; 
     letter-spacing: 2px;
     color: #7c243d;
     font-size: 20px;
-    border: 3px solid blue;
+    border: 0px solid blue;
   }
 
   #barchart-container{
     position: absolute; 
-    top: 300px; 
+    top: 350px; 
     left: 40px;
     font-size: 10px;
     font-family: "Raleway", serif;
     letter-spacing: 1.5px;
-    border: 3px solid green;
+    border: 0px solid green;
 }
 
 #bardrop{
   position: absolute;
   top: 300px;
-  left: 40px;
+  left: 100px;
   font-size: 10px;
   font-family: "Raleway", serif;
   letter-spacing: 1.5px;
-  border: 3px solid brown;
+  border: 0px solid brown;
 }
 
 #area-container{
@@ -110,7 +149,7 @@ h3 {
     font-size: 10px;
     font-family: "Raleway", serif;
     letter-spacing: 1.25px;
-    border: 3px solid red;
+    border: 0px solid red;
 }
 
 #areaintro{
@@ -122,7 +161,7 @@ h3 {
     letter-spacing: 2px;
     color: #7c243d;
     font-size: 20px;
-    border: 3px solid blue;
+    border: 0px solid blue;
   }
   
   #areadrop{
@@ -132,7 +171,7 @@ h3 {
     font-size: 10px;
     font-family: "Raleway", serif;
     letter-spacing: 1.5px;
-    border: 3px solid red;
+    border: 0px solid red;
 }
 
 #treeintro{
@@ -144,7 +183,7 @@ h3 {
     letter-spacing: 2px;
     color: #7c243d;
     font-size: 20px;
-    border: 3px solid purple;
+    border: 0px solid purple;
   }
 
 #tree-container{
@@ -154,7 +193,7 @@ h3 {
     font-size: 10px;
     font-family: "Raleway", serif;
     letter-spacing: 1.25px;
-    border: 3px solid orange;
+    border: 0px solid orange;
 }
   svg{
       font-family: "Raleway", "Montesserat", serif;

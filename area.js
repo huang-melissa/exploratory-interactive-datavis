@@ -51,7 +51,7 @@ function init() {
     .domain(d3.extent(state.data, d => d.Year))
     .range([margin.left, width - margin.right])
   yScale = d3.scaleLinear()
-    .domain([0, d3.max(state.data, d =>d.Value)])
+    .domain([d3.min(state.data, d =>d.Value), d3.max(state.data, d =>d.Value)])
     .range([height - margin.bottom, margin.top])
   // + AXES
   const xAxis = d3.axisBottom(xScale)
@@ -108,10 +108,10 @@ function init() {
     .attr("writing-mode", 'vertical-rl')
     .attr("text-anchor", "middle")
     .attr("font-weight", "bold")
-    .attr("letter-spacing", "0.2em")
+    .attr("letter-spacing", "0.1em")
     .attr("font-size","12")
     .attr("style","fill:#702b43")
-    .text("Percent")
+    .text("% of those surveyed")
 
   draw(); // calls the draw function
 }
@@ -188,7 +188,7 @@ function draw() {
   
   const area = d3.area()
     .x(d => xScale(d.Year))
-    .y0(yScale(0))
+    .y0(yScale(d3.min(state.data, d =>d.Value)))
     .y1(d => yScale(d.Value))
 
   svg.selectAll(".area")

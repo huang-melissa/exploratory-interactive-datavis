@@ -30,7 +30,7 @@ d3.csv('../data/gifts-2021-nrf.csv', d3.autoType).then(data => {
  * this will be run *one time* when the data finishes loading in
  * */
 function init() {
-  const container = d3.select("#area-container").style("position", "relative");
+  const container = d3.select("#tree-container").style("position", "relative");
 
   svg = container
     .append("svg")

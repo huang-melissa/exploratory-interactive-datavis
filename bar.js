@@ -1,5 +1,4 @@
-
-d3.csv("../data/percent_2010-nrf.csv", d3.autoType).then(data => {
+d3.csv("../data/spending_2021.csv", d3.autoType).then(data => {
     console.log(data);
   
 
@@ -32,7 +31,7 @@ d3.csv("../data/percent_2010-nrf.csv", d3.autoType).then(data => {
  const yAxis = d3.axisLeft(yScale).ticks(data.length);
 
 const color = d3.scaleSequential()
-    .domain([0, d3.max(data, d => d.Percent)])
+    .domain([-8, d3.max(data, d => d.Percent)])
     .interpolator(d3.interpolatePuRd)
 
     // draw rects
@@ -45,8 +44,19 @@ const color = d3.scaleSequential()
       .attr("width", d => width - margin.left - xScale(d.Percent))
       .attr("transform", `translate(200, ${height - margin.bottom, margin.top})`)
       .attr("fill", d=>color(d.Percent));
-      
-  
+      // .attr("width", function(d) { return width - margin.left - xScale(0)})
+      // .attr("x", function(d) {return xScale(0)});
+
+
+
+    // Animation  from https://www.d3-graph-gallery.com/graph/barplot_animation_start.html
+      // svg.selectAll("rect")
+      // .transition()
+      // .duration(800)
+      // .attr("x", function(d) { return xScale(d.Percent); })
+      // .attr("width", function(d) { return width - margin.left - xScale(d.Percent); })
+      // .delay(function(d,i){console.log(i) ; return(i*100)})
+        
     // append text
     const text = svg
       .selectAll("text")
@@ -56,7 +66,7 @@ const color = d3.scaleSequential()
       // this allows us to position the text in the center of the bar
       .attr("y", d => yScale(d.Individual) + (yScale.bandwidth()+5))
       .attr("x", 0, d => xScale(d.Percent))
-      .text(d => `${d.Percent}%`)
+      .text(d => `$${d.Percent} B`)
       .attr("dx", "205")
       .attr("fill", "#FFFFFF");
  
