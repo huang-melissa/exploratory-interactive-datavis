@@ -1,4 +1,4 @@
-d3.csv("../data/spending_2021.csv", d3.autoType).then(data => {
+d3.csv("spending_2021.csv", d3.autoType).then(data => {
     console.log(data);
   
 

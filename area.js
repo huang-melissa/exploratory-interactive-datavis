@@ -26,7 +26,7 @@ let state = {
 /* LOAD DATA */
 // + SET YOUR DATA PATH
 
-d3.csv('../data/gift_percent.csv', d3.autoType, (d) => {
+d3.csv('gift_percent.csv', d3.autoType, (d) => {
   const Object = {
     Type: d.Type,
     Value: +d.Value,
