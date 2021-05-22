@@ -57,12 +57,12 @@ h3 {
 }
 
 h4 {
-  color: #d9709a;
+  color: pink;
   text-align: Center;
   font-weight: bold; 
-  font-size: 60px;
+  font-size: 50px;
   position: absolute;
-  top: 260px;
+  top: 280px;
   left: 500px;
   letter-spacing: 1px; 
   font-family: "Raleway", serif;
@@ -72,13 +72,14 @@ h5 {
   color: #a92e85;
   text-align: Center;
   font-weight: bold; 
-  font-size: 60px;
+  font-size: 50px;
   position: absolute;
   top: 320px;
   left: 500px;
   letter-spacing: 1px; 
   font-family: "Raleway", serif;
 }
+
   div {
   
       padding: 10px;
@@ -99,32 +100,32 @@ h5 {
 
   #numintro{
     position: absolute;
-    top: 260px; 
+    top: 310px; 
     left: 40px;
     font-family: "Raleway", serif;
     font-weight: bold; 
     letter-spacing: 2px;
     color: #7c243d;
-    font-size: 20px;
+    font-size: 18px;
     border: 0px solid blue;
   }
 
 
   #barintro{
     position: absolute;
-    top: 500px; 
+    top: 485px; 
     left: 40px;
     font-family: "Raleway", serif;
     font-weight: bold; 
     letter-spacing: 2px;
     color: #7c243d;
-    font-size: 20px;
+    font-size: 18px;
     border: 0px solid blue;
   }
 
   #barchart-container{
     position: absolute; 
-    top: 510px; 
+    top: 490px; 
     left: 40px;
     font-size: 10px;
     font-family: "Raleway", serif;
@@ -134,7 +135,7 @@ h5 {
 
 #bardrop{
   position: absolute;
-  top: 300px;
+  top: 310px;
   left: 40px;
   font-size: 10px;
   font-family: "Raleway", serif;
@@ -144,8 +145,8 @@ h5 {
 
 #area-container{
     position: absolute;
-    top: 890px;
-    left: 40px;
+    top: 920px;
+    left: 125px;
     font-size: 10px;
     font-family: "Raleway", serif;
     letter-spacing: 1.25px;
@@ -154,30 +155,30 @@ h5 {
 
 #areaintro{
     position: absolute;
-    top: 870px; 
+    top: 890px; 
     left: 40px;
     font-family: "Raleway", serif;
     font-weight: bold; 
     letter-spacing: 2px;
     color: #7c243d;
-    font-size: 20px;
+    font-size: 18px;
     border: 0px solid blue;
   }
   
   #areadrop{
     position: absolute;
-    top: 900px;
-    left: 700px;
+    top: 915px;
+    left: 950px;
     font-size: 10px;
     font-family: "Raleway", serif;
     letter-spacing: 1.5px;
     border: 0px solid red;
 }
 
-/* #treeintro{
+#treeintro{
     position: absolute;
-    top: 1200px; 
-    left: 700px;
+    top: 1305px; 
+    left: 40px;
     font-family: "Raleway", serif;
     font-weight: bold; 
     letter-spacing: 2px;
@@ -188,13 +189,13 @@ h5 {
 
 #tree-container{
     position: absolute;
-    top: 1250px;
-    left: 40px;
+    top: 1375px;
+    left: 160px;
     font-size: 10px;
     font-family: "Raleway", serif;
     letter-spacing: 1.25px;
     border: 0px solid orange;
-} */
+}
   svg{
       font-family: "Raleway", "Montesserat", serif;
   }

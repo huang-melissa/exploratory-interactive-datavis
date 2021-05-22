@@ -1,20 +1,20 @@
 <!DOCTYPE html>
   <head>
     <meta charset="utf-8">
-    <title>Line/area chart: Interactive Data Visualization Tutorial 4</title>
+    <title>Consume Spending on Valentine's Day</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Meddon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
   <h3> CONSUMER SPENDING ON </h3>
-  <center><img src="title.png" width=500px></center>
+  <center><img src="title.png" width=400px></center>
 
    <h2>Februrary 14th, also known as Valentine's Day, is celebrated annually by an estimated 190 million Americans. The holiday dates back to the 5th century and has often been connected to romance.
      On this day, people exchange cards, flowers, candy, and other gifts with their Valentine. Let's take a look at consumer trends on Valentine's Day:  
    </h2>
    
-   <div id="numintro"> HOW MUCH? </div>
+   <div id="numintro"> HOW MUCH ARE WE SPENDING IN TOTAL? </div>
    <h4>2020: $196.31b</h4>
    <h5>2021: $164.76b</h5>
   
@@ -22,22 +22,26 @@
     <select id="dropdown" name="dropdown"></select> -->
     <dive id="viz">
       
-    <div id="barintro"> ON WHOM? </div>
+    <div id="barintro"> ON WHOM ARE WE SPENDING THAT MONEY? </div>
     <!-- <div id="bardrop">  
       <label for="dropdown">Year:</label>
       <select id="dropdown" name="dropdown"></select></div> -->
     <div id="barchart-container"></div>
 
-    <div id="areaintro"> WITH WHAT? </div>
+    <div id="areaintro"> WHAT'S BEING GIFTED? </div>
+  
     <div id="areadrop">  
       <label for="dropdown2">Gift:</label>
       <select id="dropdown2" name="dropdown2"></select></div>
 
     <div id="area-container"> </div>
+
+  
+    <div id="treeintro"> WHO IS BUYING THOSE GIFTS? <br> (<font color="purple">men</font> vs. <font color="hotpink">women</font>)</div>
     
-    <!-- <div id="treeintro"> WITH WHAT?<br> (breakdown by men vs women in 2021)</div>
-    
-    <div id="tree-container"></div> -->
+    <div id="tree-container">
+      <img src="men.png" width=300px> <img src="women.png" width=300px>
+    </div>
 
   </div>
     <script src="d3.js"></script>
